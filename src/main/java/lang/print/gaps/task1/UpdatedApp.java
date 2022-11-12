@@ -1,9 +1,15 @@
 package lang.print.gaps.task1;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class UpdatedApp {
     public static void main(String[] args) {
 
-        System.out.println("I'm updated \ncan be compiled. And can write to console");
+        Logger logger = Logger.getLogger(UpdatedApp.class.getName());
 
+        String message = "I'm updated\ncan be compiled. And can write to console\n";
+
+        logger.log(Level.INFO, message);
     }
 }
