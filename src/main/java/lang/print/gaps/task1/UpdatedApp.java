@@ -1,15 +1,11 @@
 package lang.print.gaps.task1;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 public class UpdatedApp {
     public static void main(String[] args) {
 
-        Logger logger = Logger.getLogger(UpdatedApp.class.getName());
+        Logger.getLogger(UpdatedApp.class).info("I'm updated\ncan be compiled. And can write to console\n");
 
-        String message = "I'm updated\ncan be compiled. And can write to console\n";
-
-        logger.log(Level.INFO, message);
     }
 }

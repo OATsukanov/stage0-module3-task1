@@ -3,13 +3,20 @@ package lang.print.gaps.task1;
 import base.BaseIOTest;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+//import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+//import java.util.InvalidPropertiesFormatException;
+
+//import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BrokenAppTest extends BaseIOTest {
     @Test
-    void main(){
+    void main() throws IOException {
         BrokenApp.main(null);
 
-        assertEquals("fixMe\n", updateLineSpliterators(outContent.toString()));
+        assertEqualsForLogger(BrokenApp.class, "fixMe\n", "lang.print.gaps.task1.BrokenApp");
+
     }
+
+
 }

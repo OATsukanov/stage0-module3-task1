@@ -1,15 +1,11 @@
 package lang.print.gaps.task1;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 public class FillGapsApp {
     public static void main(String[] args) {
 
-        Logger logger = Logger.getLogger(FillGapsApp.class.getName());
+        Logger.getLogger(FillGapsApp.class).info("Fixed\n");
 
-        String message = "Fixed\n";
-
-        logger.log(Level.INFO, message);
     }
 }

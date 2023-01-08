@@ -3,7 +3,7 @@ package lang.print.gaps.task1;
 import base.BaseIOTest;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FillGapsAppTest extends BaseIOTest {
 
@@ -11,6 +11,8 @@ class FillGapsAppTest extends BaseIOTest {
     void mainFixed() {
         FillGapsApp.main(null);
 
-        assertEquals("Fixed\n", updateLineSpliterators(outContent.toString()));
+        //assertEquals("Fixed\n", updateLineSpliterators(outContent.toString()));
+
+        assertEqualsForLogger(FillGapsApp.class, "Fixed\n", "lang.print.gaps.task1.FillGapsApp");
     }
 }

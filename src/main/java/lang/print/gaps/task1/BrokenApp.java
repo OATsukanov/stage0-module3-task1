@@ -1,16 +1,13 @@
 package lang.print.gaps.task1;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 public class BrokenApp {
     public static void main(String[] args) {
 
-        Logger logger = Logger.getLogger(BrokenApp.class.getName());
+        Logger.getLogger(BrokenApp.class).info("fixMe\n");
 
-        String message = "fixMe\n";
-
-        logger.log(Level.INFO, message);
+        }
 
     }
-}
+

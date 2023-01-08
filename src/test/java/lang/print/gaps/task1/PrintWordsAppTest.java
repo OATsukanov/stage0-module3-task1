@@ -3,7 +3,7 @@ package lang.print.gaps.task1;
 import base.BaseIOTest;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PrintWordsAppTest extends BaseIOTest {
 
@@ -11,6 +11,7 @@ class PrintWordsAppTest extends BaseIOTest {
     void mainPrintsLine() {
         PrintWordsApp.main(null);
 
-        assertEquals("java\nis\nsmth\n", updateLineSpliterators(outContent.toString()));
+        assertEqualsForLogger(PrintWordsApp.class, "java\nis\nsmth\n", "lang.print.gaps.task1.PrintWordsApp");
+
     }
 }

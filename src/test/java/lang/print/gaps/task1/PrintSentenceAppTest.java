@@ -3,7 +3,7 @@ package lang.print.gaps.task1;
 import base.BaseIOTest;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PrintSentenceAppTest extends BaseIOTest {
 
@@ -11,6 +11,6 @@ class PrintSentenceAppTest extends BaseIOTest {
     void mainPrintSentence() {
         PrintSentenceApp.main(null);
 
-        assertEquals("This is my first Java program\n", updateLineSpliterators(outContent.toString()));
+        assertEqualsForLogger(PrintSentenceApp.class, "This is my first Java program\n", "lang.print.gaps.task1.PrintSentenceApp");
     }
 }
