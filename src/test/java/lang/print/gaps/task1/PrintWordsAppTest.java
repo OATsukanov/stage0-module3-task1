@@ -11,7 +11,7 @@ class PrintWordsAppTest extends BaseIOTest {
     void mainPrintsLine() {
         PrintWordsApp.main(null);
 
-        assertEqualsForLogger(PrintWordsApp.class, "java\nis\nsmth\n", "lang.print.gaps.task1.PrintWordsApp");
+        assertEqualsForLogger(PrintWordsApp.class, "java\nis\nsmth", "lang.print.gaps.task1.PrintWordsApp");
 
     }
 }

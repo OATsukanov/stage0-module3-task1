@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 public class PrintWordsApp {
     public static void main(String[] args) {
 
-        Logger.getLogger(PrintWordsApp.class).info("java\nis\nsmth\n");
+        Logger.getLogger(PrintWordsApp.class).info("java\nis\nsmth");
 
     }
 }

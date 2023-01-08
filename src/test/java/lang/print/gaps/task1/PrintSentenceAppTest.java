@@ -11,6 +11,6 @@ class PrintSentenceAppTest extends BaseIOTest {
     void mainPrintSentence() {
         PrintSentenceApp.main(null);
 
-        assertEqualsForLogger(PrintSentenceApp.class, "This is my first Java program\n", "lang.print.gaps.task1.PrintSentenceApp");
+        assertEqualsForLogger(PrintSentenceApp.class, "This is my first Java program", "lang.print.gaps.task1.PrintSentenceApp");
     }
 }

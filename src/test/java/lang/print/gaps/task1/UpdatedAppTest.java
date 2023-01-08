@@ -12,6 +12,6 @@ class UpdatedAppTest extends BaseIOTest {
     void mainUpdated() {
         UpdatedApp.main(null);
 
-        assertEqualsForLogger(UpdatedApp.class, "I'm updated\ncan be compiled. And can write to console\n", "lang.print.gaps.task1.UpdatedApp");
+        assertEqualsForLogger(UpdatedApp.class, "I'm updated\ncan be compiled. And can write to console", "lang.print.gaps.task1.UpdatedApp");
     }
 }

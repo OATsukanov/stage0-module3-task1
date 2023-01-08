@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 public class BrokenApp {
     public static void main(String[] args) {
 
-        Logger.getLogger(BrokenApp.class).info("fixMe\n");
+        Logger.getLogger(BrokenApp.class).info("fixMe");
 
         }
 

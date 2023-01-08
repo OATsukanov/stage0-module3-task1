@@ -13,6 +13,6 @@ class FillGapsAppTest extends BaseIOTest {
 
         //assertEquals("Fixed\n", updateLineSpliterators(outContent.toString()));
 
-        assertEqualsForLogger(FillGapsApp.class, "Fixed\n", "lang.print.gaps.task1.FillGapsApp");
+        assertEqualsForLogger(FillGapsApp.class, "Fixed", "lang.print.gaps.task1.FillGapsApp");
     }
 }

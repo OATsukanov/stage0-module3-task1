@@ -14,7 +14,7 @@ class BrokenAppTest extends BaseIOTest {
     void main() throws IOException {
         BrokenApp.main(null);
 
-        assertEqualsForLogger(BrokenApp.class, "fixMe\n", "lang.print.gaps.task1.BrokenApp");
+        assertEqualsForLogger(BrokenApp.class, "fixMe", "lang.print.gaps.task1.BrokenApp");
 
     }
 
