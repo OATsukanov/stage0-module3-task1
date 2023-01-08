@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 
 //import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 //import java.util.InvalidPropertiesFormatException;
 
 //import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -12,9 +14,9 @@ import java.io.IOException;
 class BrokenAppTest extends BaseIOTest {
     @Test
     void main() throws IOException {
-        //BrokenApp.main(null);
 
-        assertEqualsForLogger(BrokenApp.class, "fixMe", "lang.print.gaps.task1.BrokenApp");
+        BrokenApp.main(null);
+        assertEquals("fixMe", updateLineSpliterators(outContent.toString()));
 
     }
 
