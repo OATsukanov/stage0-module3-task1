@@ -9,7 +9,7 @@ class PrintWordsAppTest extends BaseIOTest {
 
     @Test
     void mainPrintsLine() {
-        PrintWordsApp.main(null);
+        //PrintWordsApp.main(null);
 
         assertEqualsForLogger(PrintWordsApp.class, "java\nis\nsmth", "lang.print.gaps.task1.PrintWordsApp");
 

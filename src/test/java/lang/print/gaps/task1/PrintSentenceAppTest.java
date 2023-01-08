@@ -9,7 +9,7 @@ class PrintSentenceAppTest extends BaseIOTest {
 
     @Test
     void mainPrintSentence() {
-        PrintSentenceApp.main(null);
+        //PrintSentenceApp.main(null);
 
         assertEqualsForLogger(PrintSentenceApp.class, "This is my first Java program", "lang.print.gaps.task1.PrintSentenceApp");
     }
